@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Custom_Blockchain"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/cyperts/Custom-Blockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/cyperts/Custom-Blockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/cyperts/Custom-Blockchain/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Custom_Blockchain">
+				<Option output="/home/cyperts/Custom-Blockchain/cmake-build-debug/Custom_Blockchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cyperts/Custom-Blockchain/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cyperts/Custom-Blockchain/programs/commandLineDOS"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/Transaction_src/transaction_header"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/dp"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 Custom_Blockchain"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Custom_Blockchain/fast">
+				<Option output="/home/cyperts/Custom-Blockchain/cmake-build-debug/Custom_Blockchain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cyperts/Custom-Blockchain/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/cyperts/Custom-Blockchain/programs/commandLineDOS"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/Transaction_src/transaction_header"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header"/>
+					<Add directory="/home/cyperts/Custom-Blockchain/dp"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 Custom_Blockchain/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/cyperts/Custom-Blockchain/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/cyperts/Custom-Blockchain/Transaction_src/contex_transaction.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/Transaction_src/transaction.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/Transaction_src/transaction_header/contex_transaction.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/Transaction_src/transaction_header/metadata_transaction.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/Transaction_src/transaction_header/transaction.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/actor.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/aligned.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/any.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/api.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/array.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/bitutil.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/bloom_filter.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/compress/smaz.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/compress/zlib.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/container/deque.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/container/deque_fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/container/flat.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/container/flat_fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/aes.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/base32.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/base36.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/base58.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/base64.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/bigint.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/blowfish.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/city.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/common.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/dh.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/digest.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/elliptic.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/elliptic_r1.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/equihash.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/hex.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/hmac.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/openssl.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/pke.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/private_key.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/public_key.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/rand.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/ripemd160.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/sha1.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/sha224.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/sha256.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/sha512.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/crypto/signature.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/exception/exception.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/filesystem.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/fixed_string.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/fwd_impl.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/git_revision.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/interprocess/container.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/interprocess/file_mapping.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/interprocess/iprocess.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/interprocess/mmap_struct.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/interprocess/process.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/buffered_iostream.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/console.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/datastream.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/enum_type.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/fstream.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/iobuffer.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/json.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/json_relaxed.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/raw.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/raw_fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/raw_unpack_file.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/raw_variant.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/sstream.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/io/varint.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/appender.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/console_appender.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/file_appender.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/gelf_appender.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/log_message.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/logger.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/log/logger_config.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/make_fused.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/http/http_client.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/ip.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/message_buffer.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/platform_root_ca.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/resolve.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/udp_socket.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/network/url.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/noncopyable.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/optional.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/platform_independence.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/real128.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/reflect/reflect.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/reflect/typename.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/reflect/variant.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/api_connection.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/binary_api_connection.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/cli.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/http_api.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/json_connection.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/variant_connection.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/variant_stream.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/rpc/websocket_api.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/safe.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/scoped_exit.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/shared_ptr.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/smart_ref_fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/smart_ref_impl.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/static_variant.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/string.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/time.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/tuple.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/uint128.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/utf8.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/utility.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/variant.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/variant_object.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/vector.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/dp/vector_fwd.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/Custom-Blockchain/main.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/CLI11.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/help_text.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/help_text.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/httpc.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/httpc.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/localize.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/programs/commandLineDOS/main.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/macos_user_auth.m">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header/api_wallet.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header/macos_user_auth.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header/wallet.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet_header/wallet_se.hpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/wallet_src/wallet_se.cpp">
+			<Option target="Custom_Blockchain"/>
+		</Unit>
+		<Unit filename="/home/cyperts/Custom-Blockchain/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

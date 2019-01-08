@@ -1,0 +1,7 @@
+#include <chain/include/genesis_state.hpp>
+
+namespace dosio { namespace chain {
+
+const string genesis_state::dosio_root_key = "${DOSIO_ROOT_KEY}";
+
+} } 
