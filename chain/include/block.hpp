@@ -77,5 +77,5 @@ DP_REFLECT_ENUM(chain::transaction_receipt::status_enum,
                  (executed)(soft_fail)(hard_fail)(delayed)(expired) )
 
 DP_REFLECT(chain::transaction_receipt_header, (status)(cpu_usage_us)(net_usage_words) )
-DP_REFLECT_DERIVED(chain::transaction_receipt, (eosio::chain::transaction_receipt_header), (trx) )
-DP_REFLECT_DERIVED(chain::signed_block, (eosio::chain::signed_block_header), (transactions)(block_extensions) )
+DP_REFLECT_DERIVED(chain::transaction_receipt, (dosio::chain::transaction_receipt_header), (trx) )
+DP_REFLECT_DERIVED(chain::signed_block, (dosio::chain::signed_block_header), (transactions)(block_extensions) )

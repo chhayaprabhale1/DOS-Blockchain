@@ -1,13 +1,13 @@
-#include <chain/include/wasm_eosio_constraints.hpp>
-#include <chain/include/wasm_eosio_validation.hpp>
-#include <chain/include/wasm_eosio_binary_ops.hpp>
+#include <chain/include/wasm_dosio_constraints.hpp>
+#include <chain/include/wasm_dosio_validation.hpp>
+#include <chain/include/wasm_dosio_binary_ops.hpp>
 #include <dp/exception/exception.hpp>
 #include <chain/include/exceptions.hpp>
 #include "IR/Module.h"
 #include "IR/Operators.h"
 #include "WASM/WASM.h"
 
-namespace eosio { namespace chain { namespace wasm_validations {
+namespace dosio { namespace chain { namespace wasm_validations {
 using namespace IR;
 
 void noop_validation_visitor::validate( const Module& m ) {
