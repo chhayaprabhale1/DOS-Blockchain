@@ -81,15 +81,15 @@ namespace dosio { namespace chain {
 #include <dp/reflect/reflect.hpp>
 FC_REFLECT(chain::block_timestamp_type, (slot))
 
-namespace fc {
+namespace dp {
   template<uint16_t IntervalMs, uint64_t EpochMs>
-  void to_variant(const dosio::chain::block_timestamp<IntervalMs,EpochMs>& t, fc::variant& v) {
-     to_variant( (fc::time_point)t, v);
+  void to_variant(const dosio::chain::block_timestamp<IntervalMs,EpochMs>& t, dp::variant& v) {
+     to_variant( (dp::time_point)t, v);
   }
 
   template<uint16_t IntervalMs, uint64_t EpochMs>
-  void from_variant(const fc::variant& v, dosio::chain::block_timestamp<IntervalMs,EpochMs>& t) {
-     t = v.as<fc::time_point>();
+  void from_variant(const dp::variant& v, dosio::chain::block_timestamp<IntervalMs,EpochMs>& t) {
+     t = v.as<dp::time_point>();
   }
 }
 

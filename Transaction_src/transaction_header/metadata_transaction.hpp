@@ -18,14 +18,14 @@ class transaction_metadata {
       explicit transaction_metadata( const signed_transaction& t, packed_transaction::compression_type c = packed_transaction::none )
       :trx(t),packed_trx(t, c) {
          id = trx.id();
-         //raw_packed = fc::raw::pack( static_cast<const transaction&>(trx) );
+         //raw_packed = dp::raw::pack( static_cast<const transaction&>(trx) );
          signed_id = digest_type::hash(packed_trx);
       }
 
       explicit transaction_metadata( const packed_transaction& ptrx )
       :trx( ptrx.get_signed_transaction() ), packed_trx(ptrx) {
          id = trx.id();
-         //raw_packed = fc::raw::pack( static_cast<const transaction&>(trx) );
+         //raw_packed = dp::raw::pack( static_cast<const transaction&>(trx) );
          signed_id = digest_type::hash(packed_trx);
       }
 

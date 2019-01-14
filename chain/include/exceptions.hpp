@@ -24,8 +24,8 @@
       } \
       throw new_exception; \
    } catch( const std::exception& e ) {  \
-      exception_type fce(DP_LOG_MESSAGE( warn, FORMAT" (${what})" ,__VA_ARGS__("what",e.what()))); \
-      throw fce;\
+      exception_type dpe(DP_LOG_MESSAGE( warn, FORMAT" (${what})" ,__VA_ARGS__("what",e.what()))); \
+      throw dpe;\
    } catch( ... ) {  \
       throw dp::unhandled_exception( \
                 DP_LOG_MESSAGE( warn, FORMAT,__VA_ARGS__), \
@@ -39,11 +39,11 @@
       exception_type new_exception(e.get_log()); \
       throw new_exception; \
    } catch( const std::exception& e ) {  \
-      exception_type fce( \
+      exception_type dpe( \
                 DP_LOG_MESSAGE( warn, "${what}: ",DP_FORMAT_ARG_PARAMS(__VA_ARGS__)("what",e.what())), \
                 dp::std_exception_code,\
                 BOOST_CORE_TYPEID(decltype(e)).name(), \
-                e.what() ) ; throw fce;\
+                e.what() ) ; throw dpe;\
    } catch( ... ) {  \
       throw dp::unhandled_exception( \
                 DP_LOG_MESSAGE( warn, "",DP_FORMAT_ARG_PARAMS(__VA_ARGS__)), \

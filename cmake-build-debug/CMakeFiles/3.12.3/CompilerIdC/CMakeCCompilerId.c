@@ -169,7 +169,7 @@
 # define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
 # define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
 
-#elif defined(__FUJITSU) || defined(__FCC_VERSION) || defined(__fcc_version)
+#elif defined(__FUJITSU) || defined(__FCC_VERSION) || defined(__dpc_version)
 # define COMPILER_ID "Fujitsu"
 
 #elif defined(__TINYC__)

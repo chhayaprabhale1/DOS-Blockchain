@@ -43,12 +43,12 @@ typedef multi_index_container<
 > recovery_cache_type;
 
 void transaction_header::set_reference_block( const block_id_type& reference_block ) {
-   ref_block_num    = fc::endian_reverse_u32(reference_block._hash[0]);
+   ref_block_num    = dp::endian_reverse_u32(reference_block._hash[0]);
    ref_block_prefix = reference_block._hash[1];
 }
 
 bool transaction_header::verify_reference_block( const block_id_type& reference_block )const {
-   return ref_block_num    == (decltype(ref_block_num))fc::endian_reverse_u32(reference_block._hash[0]) &&
+   return ref_block_num    == (decltype(ref_block_num))dp::endian_reverse_u32(reference_block._hash[0]) &&
           ref_block_prefix == (decltype(ref_block_prefix))reference_block._hash[1];
 }
 
@@ -59,18 +59,18 @@ void transaction_header::validate()const {
 
 transaction_id_type transaction::id() const {
    digest_type::encoder enc;
-   fc::raw::pack( enc, *this );
+   dp::raw::pack( enc, *this );
    return enc.result();
 }
 
 digest_type transaction::sig_digest( const chain_id_type& chain_id, const vector<bytes>& cfd )const {
    digest_type::encoder enc;
-   fc::raw::pack( enc, chain_id );
-   fc::raw::pack( enc, *this );
+   dp::raw::pack( enc, chain_id );
+   dp::raw::pack( enc, *this );
    if( cfd.size() ) {
-      fc::raw::pack( enc, digest_type::hash(cfd) );
+      dp::raw::pack( enc, digest_type::hash(cfd) );
    } else {
-      fc::raw::pack( enc, digest_type() );
+      dp::raw::pack( enc, digest_type() );
    }
    return enc.result();
 }
@@ -137,7 +137,7 @@ uint32_t packed_transaction::get_unprunable_size()const {
 }
 
 uint32_t packed_transaction::get_prunable_size()const {
-   uint64_t size = fc::raw::pack_size(signatures);
+   uint64_t size = dp::raw::pack_size(signatures);
    size += packed_context_free_data.size();
    DOS_ASSERT( size <= std::numeric_limits<uint32_t>::max(), tx_too_big, "packed_transaction is too big" );
    return static_cast<uint32_t>(size);
@@ -145,13 +145,13 @@ uint32_t packed_transaction::get_prunable_size()const {
 
 digest_type packed_transaction::packed_digest()const {
    digest_type::encoder prunable;
-   fc::raw::pack( prunable, signatures );
-   fc::raw::pack( prunable, packed_context_free_data );
+   dp::raw::pack( prunable, signatures );
+   dp::raw::pack( prunable, packed_context_free_data );
 
    digest_type::encoder enc;
-   fc::raw::pack( enc, compression );
-   fc::raw::pack( enc, packed_trx  );
-   fc::raw::pack( enc, prunable.result() );
+   dp::raw::pack( enc, compression );
+   dp::raw::pack( enc, packed_trx  );
+   dp::raw::pack( enc, prunable.result() );
 
    return enc.result();
 }
@@ -178,11 +178,11 @@ static vector<bytes> unpack_context_free_data(const bytes& data) {
    if( data.size() == 0 )
       return vector<bytes>();
 
-   return fc::raw::unpack< vector<bytes> >(data);
+   return dp::raw::unpack< vector<bytes> >(data);
 }
 
 static transaction unpack_transaction(const bytes& data) {
-   return fc::raw::unpack<transaction>(data);
+   return dp::raw::unpack<transaction>(data);
 }
 
 static bytes zlib_decompress(const bytes& data) {
@@ -195,10 +195,10 @@ static bytes zlib_decompress(const bytes& data) {
       bio::write(decomp, data.data(), data.size());
       bio::close(decomp);
       return out;
-   } catch( fc::exception& er ) {
+   } catch( dp::exception& er ) {
       throw;
    } catch( ... ) {
-      fc::unhandled_exception er( FC_LOG_MESSAGE( warn, "internal decompression error"), std::current_exception() );
+      dp::unhandled_exception er( FC_LOG_MESSAGE( warn, "internal decompression error"), std::current_exception() );
       throw er;
    }
 }
@@ -217,14 +217,14 @@ static transaction zlib_decompress_transaction(const bytes& data) {
 }
 
 static bytes pack_transaction(const transaction& t) {
-   return fc::raw::pack(t);
+   return dp::raw::pack(t);
 }
 
 static bytes pack_context_free_data(const vector<bytes>& cfd ) {
    if( cfd.size() == 0 )
       return bytes();
 
-   return fc::raw::pack(cfd);
+   return dp::raw::pack(cfd);
 }
 
 static bytes zlib_compress_context_free_data(const vector<bytes>& cfd ) {
@@ -295,7 +295,7 @@ transaction_id_type packed_transaction::id()const
 transaction_id_type packed_transaction::get_uncached_id()const
 {
    const auto raw = get_raw_transaction();
-   return fc::raw::unpack<transaction>( raw ).id();
+   return dp::raw::unpack<transaction>( raw ).id();
 }
 
 void packed_transaction::local_unpack()const

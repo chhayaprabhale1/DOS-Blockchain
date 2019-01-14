@@ -29,7 +29,7 @@ configure_file(config.hpp.in config.hpp ESCAPE_QUOTES)
 target_include_directories(cub-launcher PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 
 target_link_libraries(cub-launcher
-                      PRIVATE cub_chain fc ${CMAKE_DL_LIBS} ${PLATFORM_SPECIFIC_LIBS} )
+                      PRIVATE cub_chain dp ${CMAKE_DL_LIBS} ${PLATFORM_SPECIFIC_LIBS} )
 
 install( TARGETS
    cub-launcher

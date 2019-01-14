@@ -12,7 +12,7 @@ namespace dosio { namespace chain {
 namespace dp {
 
    void to_variant(const chain::chain_id_type& cid, dp::variant& v) {
-      to_variant( static_cast<const fc::sha256&>(cid), v);
+      to_variant( static_cast<const dp::sha256&>(cid), v);
    }
 
    void from_variant(const dp::variant& v, chain::chain_id_type& cid) {
