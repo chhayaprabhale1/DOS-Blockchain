@@ -90,7 +90,7 @@ namespace dosio { namespace client { namespace http {
    parsed_url parse_url( const string& server_url ) {
       parsed_url res;
 
-      //via rfc3986 and modified a bit to suck out the port number
+      //via rdp3986 and modified a bit to suck out the port number
       //Sadly this doesn't work for ipv6 addresses
       std::regex rgx(R"xx(^(([^:/?#]+):)?(//([^:/?#]*)(:(\d+))?)?([^?#]*)(\?([^#]*))?(#(.*))?)xx");
       std::smatch match;
@@ -153,13 +153,13 @@ namespace dosio { namespace client { namespace http {
       }
    }
 
-   fc::variant do_http_call( const connection_param& cp,
-                             const fc::variant& postdata,
+   dp::variant do_http_call( const connection_param& cp,
+                             const dp::variant& postdata,
                              bool print_request,
                              bool print_response ) {
    std::string postjson;
    if( !postdata.is_null() ) {
-      postjson = print_request ? fc::json::to_pretty_string( postdata ) : fc::json::to_string( postdata );
+      postjson = print_request ? dp::json::to_pretty_string( postdata ) : dp::json::to_string( postdata );
    }
 
    const auto& url = cp.url;
@@ -221,16 +221,16 @@ namespace dosio { namespace client { namespace http {
          try {socket.shutdown();} catch(...) {}
       }
    } catch ( invalid_http_request& e ) {
-      e.append_log( FC_LOG_MESSAGE( info, "Please verify this url is valid: ${url}", ("url", url.scheme + "://" + url.server + ":" + url.port + url.path) ) );
-      e.append_log( FC_LOG_MESSAGE( info, "If the condition persists, please contact the RPC server administrator for ${server}!", ("server", url.server) ) );
+      e.append_log( DP_LOG_MESSAGE( info, "Please verify this url is valid: ${url}", ("url", url.scheme + "://" + url.server + ":" + url.port + url.path) ) );
+      e.append_log( DP_LOG_MESSAGE( info, "If the condition persists, please contact the RPC server administrator for ${server}!", ("server", url.server) ) );
       throw;
    }
 
-   const auto response_result = fc::json::from_string(re);
+   const auto response_result = dp::json::from_string(re);
    if( print_response ) {
       std::cerr << "RESPONSE:" << std::endl
                 << "---------------------" << std::endl
-                << fc::json::to_pretty_string( response_result ) << std::endl
+                << dp::json::to_pretty_string( response_result ) << std::endl
                 << "---------------------" << std::endl;
    }
    if( status_code == 200 || status_code == 201 || status_code == 202 ) {
@@ -238,26 +238,26 @@ namespace dosio { namespace client { namespace http {
    } else if( status_code == 404 ) {
       // Unknown endpoint
       if (url.path.compare(0, chain_func_base.size(), chain_func_base) == 0) {
-         throw chain::missing_chain_api_plugin_exception(FC_LOG_MESSAGE(error, "Chain API plugin is not enabled"));
+         throw chain::missing_chain_api_plugin_exception(DP_LOG_MESSAGE(error, "Chain API plugin is not enabled"));
       } else if (url.path.compare(0, wallet_func_base.size(), wallet_func_base) == 0) {
-         throw chain::missing_wallet_api_plugin_exception(FC_LOG_MESSAGE(error, "Wallet is not available"));
+         throw chain::missing_wallet_api_plugin_exception(DP_LOG_MESSAGE(error, "Wallet is not available"));
       } else if (url.path.compare(0, history_func_base.size(), history_func_base) == 0) {
-         throw chain::missing_history_api_plugin_exception(FC_LOG_MESSAGE(error, "History API plugin is not enabled"));
+         throw chain::missing_history_api_plugin_exception(DP_LOG_MESSAGE(error, "History API plugin is not enabled"));
       } else if (url.path.compare(0, net_func_base.size(), net_func_base) == 0) {
-         throw chain::missing_net_api_plugin_exception(FC_LOG_MESSAGE(error, "Net API plugin is not enabled"));
+         throw chain::missing_net_api_plugin_exception(DP_LOG_MESSAGE(error, "Net API plugin is not enabled"));
       }
    } else {
       auto &&error_info = response_result.as<DOSio::error_results>().error;
-      // Construct fc exception from error
+      // Construct dp exception from error
       const auto &error_details = error_info.details;
 
-      fc::log_messages logs;
+      dp::log_messages logs;
       for (auto itr = error_details.begin(); itr != error_details.end(); itr++) {
-         const auto& context = fc::log_context(fc::log_level::error, itr->file.data(), itr->line_number, itr->method.data());
-         logs.emplace_back(fc::log_message(context, itr->message));
+         const auto& context = dp::log_context(dp::log_level::error, itr->file.data(), itr->line_number, itr->method.data());
+         logs.emplace_back(dp::log_message(context, itr->message));
       }
 
-      throw fc::exception(logs, error_info.code, error_info.name, error_info.what);
+      throw dp::exception(logs, error_info.code, error_info.name, error_info.what);
    }
 
    DOS_ASSERT( status_code == 200, http_request_fail, "Error code ${c}\n: ${msg}\n", ("c", status_code)("msg", re) );

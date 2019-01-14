@@ -7,12 +7,12 @@ namespace dosio { namespace client { namespace localize {
    #define _(str) str
    #endif
 
-   #define localized(str, ...) localized_with_variant((str), fc::mutable_variant_object() __VA_ARGS__ )
+   #define localized(str, ...) localized_with_variant((str), dp::mutable_variant_object() __VA_ARGS__ )
 
-   inline auto localized_with_variant( const char* raw_fmt, const fc::variant_object& args) {
+   inline auto localized_with_variant( const char* raw_fmt, const dp::variant_object& args) {
       if (raw_fmt != nullptr) {
          try {
-            return fc::format_string(::gettext(raw_fmt), args);
+            return dp::format_string(::gettext(raw_fmt), args);
          } catch (...) {
          }
          return std::string(raw_fmt);

@@ -3,8 +3,8 @@
 #include "localize.hpp"
 #include <regex>
 
-using namespace DOSio::client::localize;
-using namespace DOSio::chain;
+using namespace dosio::client::localize;
+using namespace dosio::chain;
 
 const char* transaction_help_text_header = _("An error occurred while submitting the transaction for this command!");
 
@@ -90,7 +90,7 @@ const std::vector<std::pair<const char*, std::vector<const char *>>> error_help_
 };
 
 auto smatch_to_variant(const std::smatch& smatch) {
-   auto result = fc::mutable_variant_object();
+   auto result = dp::mutable_variant_object();
    for(size_t index = 0; index < smatch.size(); index++) {
       auto name = boost::lexical_cast<std::string>(index);
       if (smatch[index].matched) {
@@ -104,7 +104,7 @@ auto smatch_to_variant(const std::smatch& smatch) {
 };
 
 const char* error_advice_name_type_exception = R"=====(Name should be less than 13 characters and only contains the following symbol .12345abcdefghijklmnopqrstuvwxyz)=====";
-const char* error_advice_public_key_type_exception = R"=====(Public key should be encoded in base58 and starts with DOS prefix)=====";
+const char* error_advice_public_key_type_exception = R"=====(Public key should be encoded in base58 and starts with dos prefix)=====";
 const char* error_advice_private_key_type_exception = R"=====(Private key should be encoded in base58 WIF)=====";
 const char* error_advice_authority_type_exception = R"=====(Ensure that your authority JSON is valid follows the following format!
 {
@@ -112,7 +112,7 @@ const char* error_advice_authority_type_exception = R"=====(Ensure that your aut
   "keys": [         <keys must be alpha-numerically sorted by their string representations and unique>
     ...
     {
-      "key":        <STRING: DOS.IO compatible Public Key>,
+      "key":        <STRING: dos.IO compatible Public Key>,
       "weight":     <INTEGER [1-2^16): a signature from this key contributes this to satisfying the threshold>
     }
     ...
@@ -239,9 +239,9 @@ const std::map<int64_t, std::string> error_advice = {
    { wallet_not_available_exception::code_value, error_advice_wallet_not_available_exception }
 };
 
-namespace DOSio { namespace client { namespace help {
+namespace dosio { namespace client { namespace help {
 
-bool print_recognized_errors(const fc::exception& e, const bool verbose_errors) {
+bool print_recognized_errors(const dp::exception& e, const bool verbose_errors) {
    if (e.code() >= chain_exception::code_value) {
       std::string advice, explanation, stack_trace;
 
@@ -257,13 +257,13 @@ bool print_recognized_errors(const fc::exception& e, const bool verbose_errors) 
             explanation += "\n" + localized_with_variant(log.get_format().data(), log.get_data());
          } else if (log.get_data().size() > 0 && verbose_errors) {
             // Show data-only log only if verbose_errors option is enabled
-            explanation += "\n" + fc::json::to_string(log.get_data());
+            explanation += "\n" + dp::json::to_string(log.get_data());
          }
          // Check if there's stack trace to be added
          if (!log.get_context().get_method().empty() && verbose_errors) {
             stack_trace += "\n" +
                            log.get_context().get_file() +  ":" +
-                           fc::to_string(log.get_context().get_line_number())  + " " +
+                           dp::to_string(log.get_context().get_line_number())  + " " +
                            log.get_context().get_method();
          }
       }
@@ -281,7 +281,7 @@ bool print_recognized_errors(const fc::exception& e, const bool verbose_errors) 
    return false;
 }
 
-bool print_help_text(const fc::exception& e) {
+bool print_help_text(const dp::exception& e) {
    bool result = false;
    auto detail_str = e.to_detail_string();
    // 2048 nice round number. Picked for no particular reason. Bug above was reported for 22K+ strings.

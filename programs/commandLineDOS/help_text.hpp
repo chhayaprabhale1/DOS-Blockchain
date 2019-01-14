@@ -1,6 +1,6 @@
 #pragma once
 
-namespace DOSio { namespace client { namespace help {
-   bool print_recognized_errors(const fc::exception& e, const bool verbose_errors);
-   bool print_help_text(const fc::exception& e);
+namespace dosio { namespace client { namespace help {
+   bool print_recognized_errors(const dp::exception& e, const bool verbose_errors);
+   bool print_help_text(const dp::exception& e);
 }}}

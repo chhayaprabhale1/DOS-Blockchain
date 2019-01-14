@@ -17,12 +17,12 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/path.hpp>
-#include <fc/crypto/private_key.hpp>
-#include <fc/crypto/public_key.hpp>
-#include <fc/io/json.hpp>
-#include <fc/network/ip.hpp>
-#include <fc/reflect/variant.hpp>
-#include <fc/log/logger_config.hpp>
+#include <dp/crypto/private_key.hpp>
+#include <dp/crypto/public_key.hpp>
+#include <dp/io/json.hpp>
+#include <dp/network/ip.hpp>
+#include <dp/reflect/variant.hpp>
+#include <dp/log/logger_config.hpp>
 #include <ifaddrs.h>
 #include <sys/types.h>
 #include <netinet/in.h>
@@ -39,14 +39,14 @@ using boost::asio::ip::tcp;
 using boost::asio::ip::host_name;
 using bpo::options_description;
 using bpo::variables_map;
-using public_key_type = fc::crypto::public_key;
-using private_key_type = fc::crypto::private_key;
+using public_key_type = dp::crypto::public_key;
+using private_key_type = dp::crypto::private_key;
 
 const string block_dir = "blocks";
 const string shared_mem_dir = "state";
 
 struct local_identity {
-  vector <fc::ip::address> addrs;
+  vector <dp::ip::address> addrs;
   vector <string> names;
 
   void initialize () {
@@ -75,7 +75,7 @@ struct local_identity {
           int32_t in_addr = ntohl(ifaddr->sin_addr.s_addr);
 
           if (in_addr != 0) {
-            fc::ip::address ifa(in_addr);
+            dp::ip::address ifa(in_addr);
             addrs.push_back (ifa);
           }
         }
@@ -84,13 +84,13 @@ struct local_identity {
     }
     else {
       cerr << "unable to query local ip interfaces" << endl;
-      addrs.push_back (fc::ip::address("127.0.0.1"));
+      addrs.push_back (dp::ip::address("127.0.0.1"));
     }
   }
 
   bool contains (const string &name) const {
     try {
-      fc::ip::address test(name);
+      dp::ip::address test(name);
       for (const auto &a : addrs) {
         if (a == test)
           return true;
@@ -552,7 +552,7 @@ launcher_def::initialize (const variables_map &vmap) {
 
   if( !host_map_file.empty() ) {
     try {
-      fc::json::from_file(host_map_file).as<vector<host_def>>(bindings);
+      dp::json::from_file(host_map_file).as<vector<host_def>>(bindings);
       for (auto &binding : bindings) {
         for (auto &CUBd : binding.instances) {
           CUBd.host = binding.host_name;
@@ -606,7 +606,7 @@ void
 launcher_def::load_servers () {
   if (!server_ident_file.empty()) {
     try {
-      fc::json::from_file(server_ident_file).as<server_identities>(servers);
+      dp::json::from_file(server_ident_file).as<server_identities>(servers);
       prod_nodes = 0;
       for (auto &s : servers.producer) {
          prod_nodes += s.instances;
@@ -678,7 +678,7 @@ launcher_def::generate () {
    bfs::path savefile = output;
     {
       bfs::ofstream sf (savefile);
-      sf << fc::json::to_pretty_string (network) << endl;
+      sf << dp::json::to_pretty_string (network) << endl;
       sf.close();
     }
     if (host_map_file.empty()) {
@@ -691,7 +691,7 @@ launcher_def::generate () {
     {
       bfs::ofstream sf (savefile);
 
-      sf << fc::json::to_pretty_string (bindings) << endl;
+      sf << dp::json::to_pretty_string (bindings) << endl;
       sf.close();
     }
      return false;
@@ -1109,23 +1109,23 @@ launcher_def::write_logging_config_file(tn_node_def &node) {
     exit (9);
   }
 
-  auto log_config = fc::logging_config::default_config();
+  auto log_config = dp::logging_config::default_config();
   if(gelf_enabled) {
     log_config.appenders.push_back(
-          fc::appender_config( "net", "gelf",
-              fc::mutable_variant_object()
+          dp::appender_config( "net", "gelf",
+              dp::mutable_variant_object()
                   ( "endpoint", node.gelf_endpoint )
                   ( "host", instance.name )
              ) );
     log_config.loggers.front().appenders.push_back("net");
-    fc::logger_config p2p ("net_plugin_impl");
-    p2p.level=fc::log_level::debug;
+    dp::logger_config p2p ("net_plugin_impl");
+    p2p.level=dp::log_level::debug;
     p2p.appenders.push_back ("stderr");
     p2p.appenders.push_back ("net");
     log_config.loggers.emplace_back(p2p);
   }
 
-  auto str = fc::json::to_pretty_string( log_config, fc::json::stringify_large_ints_and_doubles );
+  auto str = dp::json::to_pretty_string( log_config, dp::json::stringify_large_ints_and_doubles );
   cfg.write( str.c_str(), str.size() );
   cfg.close();
 }
@@ -1137,7 +1137,7 @@ launcher_def::init_genesis () {
    if (!src.good()) {
       cout << "generating default genesis file " << genesis_path << endl;
       CUBio::chain::genesis_state default_genesis;
-      fc::json::save_to_file( default_genesis, genesis_path, true );
+      dp::json::save_to_file( default_genesis, genesis_path, true );
       src.open(genesis_path);
    }
    string bioskey = string(network.nodes["bios"].keys[0].get_public_key());
@@ -1185,7 +1185,7 @@ launcher_def::write_setprods_file() {
       if (p.producer_name != "CUBio")
          no_bios.schedule.push_back(p);
    }
-  auto str = fc::json::to_pretty_string( no_bios, fc::json::stringify_large_ints_and_doubles );
+  auto str = dp::json::to_pretty_string( no_bios, dp::json::stringify_large_ints_and_doubles );
   psfile.write( str.c_str(), str.size() );
   psfile.close();
 }
@@ -1369,7 +1369,7 @@ launcher_def::make_mesh () {
 void
 launcher_def::make_custom () {
   bfs::path source = shape;
-  fc::json::from_file(source).as<testnet_def>(network);
+  dp::json::from_file(source).as<testnet_def>(network);
   for (auto &h : bindings) {
     for (auto &inst : h.instances) {
       tn_node_def *node = &network.nodes[inst.name];
@@ -1571,13 +1571,13 @@ launcher_def::kill (launch_modes mode, string sig_opt) {
   case LM_LOCAL:
   case LM_REMOTE : {
     bfs::path source = "last_run.json";
-    fc::json::from_file(source).as<last_run_def>(last_run);
+    dp::json::from_file(source).as<last_run_def>(last_run);
     for (auto &info : last_run.running_nodes) {
       if (mode == LM_ALL || (info.remote && mode == LM_REMOTE) ||
           (!info.remote && mode == LM_LOCAL)) {
         if (info.pid_file.length()) {
           string pid;
-          fc::json::from_file(info.pid_file).as<string>(pid);
+          dp::json::from_file(info.pid_file).as<string>(pid);
           string kill_cmd = "kill " + sig_opt + " " + pid;
           boost::process::system (kill_cmd);
         }
@@ -1609,7 +1609,7 @@ launcher_def::find_node(uint16_t node_num) {
 vector<pair<host_def, CUBd_def>>
 launcher_def::get_nodes(const string& node_number_list) {
    vector<pair<host_def, CUBd_def>> node_list;
-   if (fc::to_lower(node_number_list) == "all") {
+   if (dp::to_lower(node_number_list) == "all") {
       for (auto host: bindings) {
          for (auto node: host.instances) {
             cout << "host=" << host.host_name << ", node=" << node.name << endl;
@@ -1731,8 +1731,8 @@ launcher_def::start_all (string &gts, launch_modes mode) {
       add_enable_stale_production = false;
       auto node = network.nodes.find(launch_name);
       launch(*node->second.instance, gts);
-    } catch (fc::exception& fce) {
-       cerr << "unable to launch " << launch_name << " fc::exception=" << fce.to_detail_string() << endl;
+    } catch (dp::exception& dpe) {
+       cerr << "unable to launch " << launch_name << " dp::exception=" << dpe.to_detail_string() << endl;
     } catch (std::exception& stde) {
        cerr << "unable to launch " << launch_name << " std::exception=" << stde.what() << endl;
     } catch (...) {
@@ -1752,8 +1752,8 @@ launcher_def::start_all (string &gts, launch_modes mode) {
           try {
              cerr << "launching " << inst.name << endl;
              launch (inst, gts);
-          } catch (fc::exception& fce) {
-             cerr << "unable to launch " << inst.name << " fc::exception=" << fce.to_detail_string() << endl;
+          } catch (dp::exception& dpe) {
+             cerr << "unable to launch " << inst.name << " dp::exception=" << dpe.to_detail_string() << endl;
           } catch (std::exception& stde) {
              cerr << "unable to launch " << inst.name << " std::exception=" << stde.what() << endl;
           } catch (...) {
@@ -1769,7 +1769,7 @@ launcher_def::start_all (string &gts, launch_modes mode) {
   bfs::path savefile = "last_run.json";
   bfs::ofstream sf (savefile);
 
-  sf << fc::json::to_pretty_string (last_run) << endl;
+  sf << dp::json::to_pretty_string (last_run) << endl;
   sf.close();
 }
 
@@ -1945,33 +1945,33 @@ int main (int argc, char *argv[]) {
 
 //-------------------------------------------------------------
 
-FC_REFLECT( remote_deploy,
+DP_REFLECT( remote_deploy,
             (ssh_cmd)(scp_cmd)(ssh_identity)(ssh_args) )
 
-FC_REFLECT( prodkey_def,
+DP_REFLECT( prodkey_def,
             (producer_name)(block_signing_key))
 
-FC_REFLECT( producer_set_def,
+DP_REFLECT( producer_set_def,
             (schedule))
 
-FC_REFLECT( host_def,
+DP_REFLECT( host_def,
             (genesis)(ssh_identity)(ssh_args)(CUBio_home)
             (host_name)(public_name)
             (base_p2p_port)(base_http_port)(def_file_size)
             (instances) )
 
-FC_REFLECT( CUBd_def,
+DP_REFLECT( CUBd_def,
             (name)(config_dir_name)(data_dir_name)(has_db)
             (p2p_port)(http_port)(file_size) )
 
-FC_REFLECT( tn_node_def, (name)(keys)(peers)(producers) )
+DP_REFLECT( tn_node_def, (name)(keys)(peers)(producers) )
 
-FC_REFLECT( testnet_def, (name)(ssh_helper)(nodes) )
+DP_REFLECT( testnet_def, (name)(ssh_helper)(nodes) )
 
-FC_REFLECT( server_name_def, (ipaddr) (name) (has_bios) (CUBio_home) (instances) )
+DP_REFLECT( server_name_def, (ipaddr) (name) (has_bios) (CUBio_home) (instances) )
 
-FC_REFLECT( server_identities, (producer) (nonprod) (db) (default_CUBio_home) (ssh) )
+DP_REFLECT( server_identities, (producer) (nonprod) (db) (default_CUBio_home) (ssh) )
 
-FC_REFLECT( node_rt_info, (remote)(pid_file)(kill_cmd) )
+DP_REFLECT( node_rt_info, (remote)(pid_file)(kill_cmd) )
 
-FC_REFLECT( last_run_def, (running_nodes) )
+DP_REFLECT( last_run_def, (running_nodes) )

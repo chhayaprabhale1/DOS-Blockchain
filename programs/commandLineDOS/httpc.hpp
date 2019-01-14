@@ -67,9 +67,9 @@ namespace dosio { namespace client { namespace http {
       }
    };
 
-   fc::variant do_http_call(
+   dp::variant do_http_call(
                              const connection_param& cp,
-                             const fc::variant& postdata = fc::variant(),
+                             const dp::variant& postdata = dp::variant(),
                              bool print_request = false,
                              bool print_response = false);
 
@@ -120,5 +120,5 @@ namespace dosio { namespace client { namespace http {
    const string wallet_sign_trx = wallet_func_base + "/sign_transaction";
    const string kdosd_stop = "/v1/kdosd/stop";
 
-   FC_DECLARE_EXCEPTION( connection_exception, 1100000, "Connection Exception" );
+   DP_DECLARE_EXCEPTION( connection_exception, 1100000, "Connection Exception" );
  }}}
