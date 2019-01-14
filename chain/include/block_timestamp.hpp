@@ -79,7 +79,7 @@ namespace dosio { namespace chain {
 
 
 #include <dp/reflect/reflect.hpp>
-FC_REFLECT(chain::block_timestamp_type, (slot))
+DP_REFLECT(chain::block_timestamp_type, (slot))
 
 namespace dp {
   template<uint16_t IntervalMs, uint64_t EpochMs>

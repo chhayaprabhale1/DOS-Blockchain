@@ -66,7 +66,7 @@ struct se_wallet_impl {
    }
 
    static string string_for_cferror(CFErrorRef error) {
-      CFStringRef errorString = CFCopyDescription(error);
+      CFStringRef errorString = CDPopyDescription(error);
       char buff[CFStringGetLength(errorString) + 1];
       string ret;
       if(CFStringGetCString(errorString, buff, sizeof(buff), kCFStringEncodingUTF8))

@@ -66,11 +66,11 @@ class wavm_instantiated_module : public wasm_instantiated_module_interface {
             Runtime::invokeFunction(call,args);
          } catch( const wasm_exit& e ) {
          } catch( const Runtime::Exception& e ) {
-             FC_THROW_EXCEPTION(wasm_execution_error,
+             DP_THROW_EXCEPTION(wasm_execution_error,
                          "cause: ${cause}\n${callstack}",
                          ("cause", string(describeExceptionCause(e.cause)))
                          ("callstack", e.callStack));
-         } FC_CAPTURE_AND_RETHROW()
+         } DP_CAPTURE_AND_RETHROW()
       }
 
 

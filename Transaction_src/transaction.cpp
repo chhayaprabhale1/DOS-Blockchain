@@ -112,7 +112,7 @@ flat_set<public_key_type> transaction::get_signature_keys( const vector<signatur
    }
 
    return recovered_pub_keys;
-} FC_CAPTURE_AND_RETHROW() }
+} DP_CAPTURE_AND_RETHROW() }
 
 
 const signature_type& signed_transaction::sign(const private_key_type& key, const chain_id_type& chain_id) {
@@ -198,7 +198,7 @@ static bytes zlib_decompress(const bytes& data) {
    } catch( dp::exception& er ) {
       throw;
    } catch( ... ) {
-      dp::unhandled_exception er( FC_LOG_MESSAGE( warn, "internal decompression error"), std::current_exception() );
+      dp::unhandled_exception er( DP_LOG_MESSAGE( warn, "internal decompression error"), std::current_exception() );
       throw er;
    }
 }
@@ -263,7 +263,7 @@ bytes packed_transaction::get_raw_transaction() const
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
       }
-   } FC_CAPTURE_AND_RETHROW((compression)(packed_trx))
+   } DP_CAPTURE_AND_RETHROW((compression)(packed_trx))
 }
 
 vector<bytes> packed_transaction::get_context_free_data()const
@@ -277,7 +277,7 @@ vector<bytes> packed_transaction::get_context_free_data()const
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
       }
-   } FC_CAPTURE_AND_RETHROW((compression)(packed_context_free_data))
+   } DP_CAPTURE_AND_RETHROW((compression)(packed_context_free_data))
 }
 
 time_point_sec packed_transaction::expiration()const
@@ -312,7 +312,7 @@ void packed_transaction::local_unpack()const
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
          }
-      } FC_CAPTURE_AND_RETHROW((compression)(packed_trx))
+      } DP_CAPTURE_AND_RETHROW((compression)(packed_trx))
    }
 }
 
@@ -333,7 +333,7 @@ signed_transaction packed_transaction::get_signed_transaction() const
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
       }
-   } FC_CAPTURE_AND_RETHROW((compression)(packed_trx)(packed_context_free_data))
+   } DP_CAPTURE_AND_RETHROW((compression)(packed_trx)(packed_context_free_data))
 
 }
 
@@ -350,7 +350,7 @@ void packed_transaction::set_transaction(const transaction& t, packed_transactio
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
       }
-   } FC_CAPTURE_AND_RETHROW((_compression)(t))
+   } DP_CAPTURE_AND_RETHROW((_compression)(t))
    packed_context_free_data.clear();
    compression = _compression;
 }
@@ -370,7 +370,7 @@ void packed_transaction::set_transaction(const transaction& t, const vector<byte
          default:
             DOS_THROW(unknown_transaction_compression, "Unknown transaction compression algorithm");
       }
-   } FC_CAPTURE_AND_RETHROW((_compression)(t))
+   } DP_CAPTURE_AND_RETHROW((_compression)(t))
    compression = _compression;
 }
 
