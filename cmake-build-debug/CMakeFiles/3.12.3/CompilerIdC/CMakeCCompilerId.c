@@ -372,8 +372,8 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #elif defined(__HAIKU__)
 # define PLATFORM_ID "Haiku"
 
-#elif defined(__BeOS) || defined(__BEOS__) || defined(_BEOS)
-# define PLATFORM_ID "BeOS"
+#elif defined(__BdOS) || defined(__BEOS__) || defined(_BEOS)
+# define PLATFORM_ID "BdOS"
 
 #elif defined(__QNX__) || defined(__QNXNTO__)
 # define PLATFORM_ID "QNX"
