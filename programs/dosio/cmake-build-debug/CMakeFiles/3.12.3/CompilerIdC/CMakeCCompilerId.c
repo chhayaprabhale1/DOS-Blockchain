@@ -169,7 +169,7 @@
 # define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
 # define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
 
-#elif defined(__FUJITSU) || defined(__FCC_VERSION) || defined(__fcc_version)
+#elif defined(__FUJITSU) || defined(__DPC_VERSION) || defined(__dpc_version)
 # define COMPILER_ID "Fujitsu"
 
 #elif defined(__TINYC__)
@@ -372,7 +372,7 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #elif defined(__HAIKU__)
 # define PLATFORM_ID "Haiku"
 
-#elif defined(__BeOS) || defined(__BEOS__) || defined(_BEOS)
+#elif defined(__BeOS) || defined(__BDOS__) || defined(_BDOS)
 # define PLATFORM_ID "BeOS"
 
 #elif defined(__QNX__) || defined(__QNXNTO__)

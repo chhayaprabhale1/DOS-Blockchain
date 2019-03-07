@@ -1,0 +1,16 @@
+/**
+ *  @file
+ *  @copyright defined in dos/LICENSE.txt
+ *
+ * \warning This file is machine generated. DO NOT EDIT.  See config.hpp.in for changes.
+ */
+#pragma once
+
+#ifndef CONFIG_HPP_IN
+#define CONFIG_HPP_IN
+
+namespace dosio { namespace noddos { namespace config {
+  constexpr uint64_t version = 0x${noddos_BUILD_VERSION};
+}}}
+
+#endif // CONFIG_HPP_IN
