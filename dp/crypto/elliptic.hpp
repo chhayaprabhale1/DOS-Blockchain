@@ -1,12 +1,12 @@
 #pragma once
-#include <dp/crypto/bigint.hpp>
-#include <dp/crypto/common.hpp>
-#include <dp/crypto/openssl.hpp>
-#include <dp/crypto/sha256.hpp>
-#include <dp/crypto/sha512.hpp>
-#include <dp/fwd.hpp>
-#include <dp/array.hpp>
-#include <dp/io/raw_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/bigint.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/common.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/openssl.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/sha256.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/sha512.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/array.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw_fwd.hpp>
 
 namespace dp {
 
@@ -269,7 +269,7 @@ namespace dp {
   } // namespace raw
 
 } // namespace dp
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 
 DP_REFLECT_TYPENAME( dp::ecc::private_key )
 DP_REFLECT_TYPENAME( dp::ecc::public_key )

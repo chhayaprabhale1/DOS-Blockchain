@@ -1,8 +1,8 @@
 #pragma once
-#include <dp/fwd.hpp>
-#include <dp/string.hpp>
-#include <dp/platform_independence.hpp>
-#include <dp/io/raw_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/platform_independence.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw_fwd.hpp>
 
 namespace dp
 {
@@ -132,5 +132,5 @@ namespace boost
        }
     };
 }
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 DP_REFLECT_TYPENAME( dp::sha256 )

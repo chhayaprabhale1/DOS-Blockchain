@@ -1,6 +1,6 @@
 #pragma once
-#include <dp/reflect/reflect.hpp>
-#include <dp/variant_object.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant_object.hpp>
 
 namespace dp
 {

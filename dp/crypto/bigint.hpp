@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
-#include <dp/string.hpp>
-#include <dp/vector.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/vector.hpp>
 
 struct bignum_st;
 typedef bignum_st BIGNUM;

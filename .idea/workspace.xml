@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
-    <generated />
+    <generated>
+      <config projectName="Project" targetName="cub-launcher" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +11,67 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87e26dfc-0280-48f0-ac95-f83684463a08" name="Default Changelist" comment="" />
+    <list default="true" id="87e26dfc-0280-48f0-ac95-f83684463a08" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain/include/chain_config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/chain/include/chain_config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain/include/genesis_state.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/chain/include/genesis_state.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chain/include/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/chain/include/types.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/array.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/array.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/base58.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/base58.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/bigint.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/bigint.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/common.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/common.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/elliptic.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/elliptic.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/elliptic_r1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/elliptic_r1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/hex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/hex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/private_key.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/private_key.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/public_key.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/public_key.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/ripemd160.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/ripemd160.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/sha1.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/sha1.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/sha256.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/sha256.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/sha512.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/sha512.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/crypto/signature.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/crypto/signature.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/exception/exception.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/exception/exception.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/filesystem.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/filesystem.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/io/datastream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/io/datastream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/io/json.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/io/json.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/io/raw.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/io/raw.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/io/raw_fwd.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/io/raw_fwd.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/io/raw_variant.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/io/raw_variant.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/log/log_message.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/log/log_message.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/log/logger.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/log/logger.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/log/logger_config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/log/logger_config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/network/ip.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/network/ip.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/optional.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/optional.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/reflect/reflect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/reflect/reflect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/reflect/typename.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/reflect/typename.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/reflect/variant.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/reflect/variant.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/safe.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/safe.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/shared_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/shared_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/static_variant.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/static_variant.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/string.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/string.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/time.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/time.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/unique_ptr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/unique_ptr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/variant.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/variant.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/variant_object.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/dp/variant_object.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/cmake-build-debug/config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programs/dosio/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/programs/dosio/main.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/programs/dosio/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,66 +79,84 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="253535388">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Makefile" value="1" />
-          <entry key="cmake" value="1" />
-          <entry key="cpp" value="1" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CMakeCache.txt" value="1" />
-          <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/programs/dosio/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/programs/dosio/main.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/dp/compress/zlib.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+        <option value="$PROJECT_DIR$/dp/crypto/private_key.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/bigint.hpp" />
+        <option value="$PROJECT_DIR$/dp/string.hpp" />
+        <option value="$PROJECT_DIR$/dp/fwd.hpp" />
+        <option value="$PROJECT_DIR$/dp/optional.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/common.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/ripemd160.hpp" />
+        <option value="$PROJECT_DIR$/dp/io/raw_fwd.hpp" />
+        <option value="$PROJECT_DIR$/dp/variant.hpp" />
+        <option value="$PROJECT_DIR$/dp/reflect/reflect.hpp" />
+        <option value="$PROJECT_DIR$/dp/reflect/typename.hpp" />
+        <option value="$PROJECT_DIR$/dp/exception/exception.hpp" />
+        <option value="$PROJECT_DIR$/dp/log/logger.hpp" />
+        <option value="$PROJECT_DIR$/dp/time.hpp" />
+        <option value="$PROJECT_DIR$/dp/shared_ptr.hpp" />
+        <option value="$PROJECT_DIR$/dp/log/log_message.hpp" />
+        <option value="$PROJECT_DIR$/dp/variant_object.hpp" />
+        <option value="$PROJECT_DIR$/dp/unique_ptr.hpp" />
+        <option value="$PROJECT_DIR$/dp/array.hpp" />
+        <option value="$PROJECT_DIR$/dp/safe.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/base58.hpp" />
+        <option value="$PROJECT_DIR$/dp/io/raw.hpp" />
+        <option value="$PROJECT_DIR$/dp/io/raw_variant.hpp" />
+        <option value="$PROJECT_DIR$/dp/io/datastream.hpp" />
+        <option value="$PROJECT_DIR$/dp/filesystem.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/hex.hpp" />
+        <option value="$PROJECT_DIR$/dp/static_variant.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/sha256.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/sha512.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/elliptic.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/elliptic_r1.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/public_key.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/signature.hpp" />
+        <option value="$PROJECT_DIR$/dp/reflect/variant.hpp" />
+        <option value="$PROJECT_DIR$/dp/io/json.hpp" />
+        <option value="$PROJECT_DIR$/dp/network/ip.hpp" />
+        <option value="$PROJECT_DIR$/dp/crypto/sha1.hpp" />
+        <option value="$PROJECT_DIR$/dp/log/logger_config.hpp" />
+        <option value="$PROJECT_DIR$/programs/dosio/main.cpp" />
+        <option value="$PROJECT_DIR$/chain/include/genesis_state.hpp" />
+        <option value="$PROJECT_DIR$/chain/include/chain_config.hpp" />
+        <option value="$PROJECT_DIR$/chain/include/types.hpp" />
+        <option value="$PROJECT_DIR$/dp/compress/zlib.hpp" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -106,24 +186,51 @@
             <path>
               <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="chain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="chain_plugin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
               <item name="programs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="programs" type="462c0819:PsiDirectoryNode" />
-              <item name="commandLineDOS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
               <item name="programs" type="462c0819:PsiDirectoryNode" />
               <item name="dosio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="Transaction_src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="Transaction_src" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction_header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet_src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOS-Blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOS-Blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet_src" type="462c0819:PsiDirectoryNode" />
+              <item name="wallet_header" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -132,6 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -148,6 +256,13 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="cub-launcher" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="cub-launcher" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cub-launcher">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -161,14 +276,30 @@
       <workItem from="1548747834777" duration="906000" />
       <workItem from="1548749216653" duration="1553000" />
       <workItem from="1549004432389" duration="631000" />
+      <workItem from="1557986145492" duration="348000" />
+      <workItem from="1557987574092" duration="249000" />
+      <workItem from="1557987892573" duration="3524000" />
+      <workItem from="1558332219034" duration="16124000" />
+      <workItem from="1559026898861" duration="144000" />
+      <workItem from="1560754535312" duration="381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3090000" />
+    <option name="totallyTimeSpent" value="23860000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -179,18 +310,42 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960095" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49960095" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019952" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49720672" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4980048" visible="true" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24980047" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49960095" weight="0.32899022" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49960095" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019952" side_tool="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.49720672" weight="0.3257329" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" sideWeight="0.4980048" visible="true" weight="0.32899022" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -199,20 +354,352 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/dp/crypto/bigint.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/programs/dosio/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/dp/string.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/ripemd160.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/common.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/raw_fwd.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/variant.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10020">
+          <caret line="671" column="55" selection-start-line="671" selection-start-column="55" selection-end-line="671" selection-end-column="55" />
+          <folding>
+            <element signature="e#14#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/reflect/reflect.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4547">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/reflect/typename.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/exception/exception.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7215">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/log/logger.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2073">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/time.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="140" column="55" selection-start-line="140" selection-start-column="55" selection-end-line="140" selection-end-column="55" />
+          <folding>
+            <element signature="e#13#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/shared_ptr.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/log/log_message.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1713">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/variant_object.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3153">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/unique_ptr.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-618">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/array.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+          <folding>
+            <element signature="e#13#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/safe.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/base58.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/raw.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11162">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/raw_variant.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1893">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/datastream.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/filesystem.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3588">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/hex.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/static_variant.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5762">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/sha256.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="134" column="55" selection-start-line="134" selection-start-column="55" selection-end-line="134" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/sha512.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/elliptic.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4065">
+          <caret line="271" column="55" selection-start-line="271" selection-start-column="55" selection-end-line="271" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/elliptic_r1.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="220" column="55" selection-start-line="220" selection-start-column="55" selection-end-line="220" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/public_key.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-498">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/signature.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/reflect/variant.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-123">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/json.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-917">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/network/ip.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/crypto/sha1.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/log/logger_config.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/programs/dosio/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chain/include/genesis_state.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chain/name.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/optional.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+          <folding>
+            <element signature="e#137#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chain/include/types.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-798">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chain/include/chain_config.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#14#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/platform_independence.hpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+    <entry file="file://$PROJECT_DIR$/dp/vector.hpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+    <entry file="file://$PROJECT_DIR$/dp/api.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/network/udp_socket.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/network/message_buffer.hpp">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/vector_fwd.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet_src/wallet_header/wallet.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/io/raw_unpack_file.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/compress/smaz.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dp/compress/zlib.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -1,7 +1,7 @@
 #pragma once
-#include <dp/variant.hpp>
-#include <dp/shared_ptr.hpp>
-#include <dp/unique_ptr.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/shared_ptr.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/unique_ptr.hpp>
 
 namespace dp
 {

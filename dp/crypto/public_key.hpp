@@ -1,10 +1,10 @@
 #pragma once
-#include <dp/crypto/elliptic.hpp>
-#include <dp/crypto/elliptic_r1.hpp>
-#include <dp/crypto/signature.hpp>
-#include <dp/reflect/reflect.hpp>
-#include <dp/reflect/variant.hpp>
-#include <dp/static_variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/elliptic.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/elliptic_r1.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/signature.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/static_variant.hpp>
 
 namespace dp { namespace crypto {
    namespace config {

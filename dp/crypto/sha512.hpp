@@ -1,6 +1,6 @@
 #pragma once
-#include <dp/fwd.hpp>
-#include <dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
 
 namespace dp
 {
@@ -74,5 +74,5 @@ class sha512
 
 } // dp
 
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 DP_REFLECT_TYPENAME( dp::sha512 )

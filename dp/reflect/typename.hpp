@@ -4,11 +4,11 @@
 #include <map>
 #include <vector>
 
-#include <dp/string.hpp>
-#include <dp/optional.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/optional.hpp>
 
-#include <dp/container/flat_fwd.hpp>
-#include <dp/container/deque_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/flat_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/deque_fwd.hpp>
 
 namespace dp {
   class value;

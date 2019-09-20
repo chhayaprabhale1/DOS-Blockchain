@@ -4,7 +4,7 @@
 #define CONFIG_HPP_IN
 
 namespace cub { namespace launcher { namespace config {
-  constexpr char version_str[] = "6e63e9aa";
+  constexpr char version_str[] = "40a288d9";
 }}}
 
 #endif // CONFIG_HPP_IN

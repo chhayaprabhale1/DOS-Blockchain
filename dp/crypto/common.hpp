@@ -1,10 +1,10 @@
 #pragma once
-#include <dp/crypto/ripemd160.hpp>
-#include <dp/reflect/reflect.hpp>
-#include <dp/crypto/base58.hpp>
-#include <dp/io/raw.hpp>
-#include <dp/utility.hpp>
-#include <dp/static_variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/ripemd160.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/base58.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/utility.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/static_variant.hpp>
 
 namespace dp { namespace crypto {
    template<typename DataType>

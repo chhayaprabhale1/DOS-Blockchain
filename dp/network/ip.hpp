@@ -1,9 +1,9 @@
 #pragma once
-#include <dp/string.hpp>
-#include <dp/crypto/sha1.hpp>
-#include <dp/io/raw_fwd.hpp>
-#include <dp/crypto/city.hpp>
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/sha1.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/city.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 
 namespace dp {
 

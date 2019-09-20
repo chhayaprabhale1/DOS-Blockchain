@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/cub-launcher.dir/main.o  -o cub-launcher -lcub_chain -ldp -ldl 

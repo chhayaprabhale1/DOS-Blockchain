@@ -1,8 +1,8 @@
 #pragma once
 
-#include <dp/fwd.hpp>
-#include <dp/io/raw_fwd.hpp>
-#include <dp/reflect/typename.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/typename.hpp>
 
 namespace dp{
 class sha512;

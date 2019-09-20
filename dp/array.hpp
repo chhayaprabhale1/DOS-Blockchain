@@ -1,8 +1,8 @@
 #pragma once
-#include <dp/crypto/base64.hpp>
-#include <dp/variant.hpp>
-#include <dp/reflect/reflect.hpp>
-#include <dp/exception/exception.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/base64.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/exception/exception.hpp>
 
 namespace dp {
 
@@ -131,7 +131,7 @@ namespace dp {
 }
 
 #include <unordered_map>
-#include <dp/crypto/city.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/city.hpp>
 namespace std
 {
     template<typename T, size_t N>

@@ -1,8 +1,8 @@
 #pragma once
-#include <dp/string.hpp>
-#include <dp/time.hpp>
-#include <dp/shared_ptr.hpp>
-#include <dp/log/log_message.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/time.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/shared_ptr.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/log/log_message.hpp>
 
 namespace dp  
 {

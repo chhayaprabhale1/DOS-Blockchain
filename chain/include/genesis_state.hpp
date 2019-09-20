@@ -1,9 +1,9 @@
 #pragma once
 
-#include <include/chain/chain_config.hpp>
-#include <include/chain/types.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chain/include/chain_config.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chain/include/types.hpp>
 
-#include <dp/crypto/sha256.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/sha256.hpp>
 
 #include <string>
 #include <vector>

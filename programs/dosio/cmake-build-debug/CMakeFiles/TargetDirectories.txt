@@ -1,0 +1,7 @@
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/cub-launcher.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/install/local.dir
+/home/cyperts/Desktop/Desktoa/DOS-Blockchain/programs/dosio/cmake-build-debug/CMakeFiles/install.dir

@@ -12,7 +12,7 @@
 #pragma once
 #include <stdexcept>
 #include <typeinfo>
-#include <dp/exception/exception.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/exception/exception.hpp>
 #include <boost/core/typeinfo.hpp>
 
 namespace dp {

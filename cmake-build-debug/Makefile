@@ -48,7 +48,7 @@ RM = /home/cyperts/Downloads/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cyperts/Custom-Blockchain
+CMAKE_SOURCE_DIR = /home/cyperts/Desktop/Desktoa/Custom-Blockchain
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/cyperts/Custom-Blockchain/cmake-build-debug

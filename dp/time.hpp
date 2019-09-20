@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
-#include <dp/string.hpp>
-#include <dp/optional.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/optional.hpp>
 
 #ifdef _MSC_VER
   #pragma warning (push)
@@ -138,7 +138,7 @@ namespace dp {
                                               const std::string& ago = " ago");
 }
 
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 DP_REFLECT_TYPENAME( dp::time_point )
 DP_REFLECT_TYPENAME( dp::microseconds )
 DP_REFLECT_TYPENAME( dp::time_point_sec )

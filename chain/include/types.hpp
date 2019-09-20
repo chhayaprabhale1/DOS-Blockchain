@@ -1,23 +1,23 @@
 #pragma once
-#include <chain/include/name.hpp>
-#include <chain/include/chain_id_type.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chain/include/name.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chain/include/chain_id_type.hpp>
 
-#include <chainbase/chainbase.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chainbase/chainbase.hpp>
 
-#include <dp/container/flat_fwd.hpp>
-#include <dp/io/varint.hpp>
-#include <dp/io/enum_type.hpp>
-#include <dp/crypto/sha224.hpp>
-#include <dp/optional.hpp>
-#include <dp/safe.hpp>
-#include <dp/container/flat.hpp>
-#include <dp/string.hpp>
-#include <dp/io/raw.hpp>
-#include <dp/static_variant.hpp>
-#include <dp/smart_ref_fwd.hpp>
-#include <dp/crypto/ripemd160.hpp>
-#include <dp/fixed_string.hpp>
-#include <dp/crypto/private_key.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/flat_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/varint.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/enum_type.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/sha224.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/optional.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/safe.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/flat.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/static_variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/smart_ref_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/ripemd160.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/fixed_string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/private_key.hpp>
 
 #include <memory>
 #include <vector>

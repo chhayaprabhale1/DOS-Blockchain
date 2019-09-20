@@ -10,11 +10,11 @@
 
 #include <string.h> // memset
 
-#include <dp/optional.hpp>
-#include <dp/string.hpp>
-#include <dp/container/deque_fwd.hpp>
-#include <dp/container/flat_fwd.hpp>
-#include <dp/smart_ref_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/optional.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/string.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/deque_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/container/flat_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/smart_ref_fwd.hpp>
 #include <boost/multi_index_container_fwd.hpp>
 
 #include <boost/multiprecision/cpp_int.hpp>
@@ -669,7 +669,7 @@ namespace dp
    bool operator ! ( const variant& a );
 } // namespace dp
 
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 DP_REFLECT_TYPENAME( dp::variant )
 DP_REFLECT_ENUM( dp::variant::type_id, (null_type)(int64_type)(uint64_type)(double_type)(bool_type)(string_type)(array_type)(object_type)(blob_type) )
 DP_REFLECT( dp::blob, (data) );

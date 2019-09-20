@@ -1,5 +1,5 @@
 #pragma once
-#include <dp/log/logger.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/log/logger.hpp>
 
 namespace dp {
    class path;
@@ -46,7 +46,7 @@ namespace dp {
    const string& get_thread_name();
 }
 
-#include <dp/reflect/reflect.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/reflect.hpp>
 DP_REFLECT( dp::appender_config, (name)(type)(args)(enabled) )
 DP_REFLECT( dp::logger_config, (name)(parent)(level)(enabled)(additivity)(appenders) )
 DP_REFLECT( dp::logging_config, (includes)(appenders)(loggers) )

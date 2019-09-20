@@ -3,9 +3,9 @@
  * @file log_message.hpp
  * @brief Defines types and helper macros necessary for generating log messages.
  */
-#include <dp/time.hpp>
-#include <dp/variant_object.hpp>
-#include <dp/shared_ptr.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/time.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant_object.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/shared_ptr.hpp>
 #include <memory>
 
 namespace dp

@@ -1,8 +1,8 @@
 #pragma once
-#include <dp/exception/exception.hpp>
-#include <dp/io/raw_fwd.hpp>
-#include <dp/variant_object.hpp>
-#include <dp/variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/exception/exception.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/raw_fwd.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant_object.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/variant.hpp>
 
 namespace dp { namespace raw {
 

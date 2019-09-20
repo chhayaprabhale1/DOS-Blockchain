@@ -17,17 +17,17 @@
 #include <boost/lexical_cast.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/path.hpp>
-#include <dp/crypto/private_key.hpp>
-#include <dp/crypto/public_key.hpp>
-#include <dp/io/json.hpp>
-#include <dp/network/ip.hpp>
-#include <dp/reflect/variant.hpp>
-#include <dp/log/logger_config.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/private_key.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/crypto/public_key.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/io/json.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/network/ip.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/reflect/variant.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/dp/log/logger_config.hpp>
 #include <ifaddrs.h>
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <net/if.h>
-#include <cub/chain/genesis_state.hpp>
+#include </home/cyperts/Desktop/Desktoa/DOS-Blockchain/chain/include/genesis_state.hpp>
 
 #include "config.hpp"
 
